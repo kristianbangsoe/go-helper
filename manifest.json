@@ -1,0 +1,9 @@
+{
+    "name": "Tak tak tak",
+    "short_name": "PWA",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ccc",
+    "theme_color": "#ccc"
+}

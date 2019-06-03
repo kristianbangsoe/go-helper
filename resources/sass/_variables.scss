@@ -1,0 +1,47 @@
+
+// Body
+$body-bg: #FAFCFD;
+
+// Typography
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #29255C;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #EA5A85;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #4944CC;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$dark: #707070;
+
+
+.color-gray{
+    color: #707070;
+}
+
+.color-pink{
+    color: $pink;
+}
+
+.bg-pink{
+    background: $pink;
+    color: white;
+    &:hover{
+        color: white;
+        background: #ea396e;
+    }
+}
+
+.bg-white{
+    background: white;
+}
+
+.color-lgray{
+    color: #a0a0a0;
+}

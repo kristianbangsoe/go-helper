@@ -1,0 +1,14 @@
+{
+    "name": "Tak tak tak",
+    "short_name": "PWA",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#4944cc",
+    "theme_color": "#fff",
+    "start_url": ".",
+    "icons": [{
+        "src": "uploads/home-screen.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }]
+}
