@@ -365,15 +365,12 @@ export default {
                 
                 if(this.category == 0) {
                     if (this.radius >= km && this.age <= user.birth && user.id != this.mUser) {
-                       return user;
-                    }
-                }else{
-
-                    if (this.radius >= km && sec == 1 && user.id != this.mUser) {
                         return user;
                     }
-
-
+                }else{
+                    if (this.radius >= km && this.age <= user.birth && sec == 1 && user.id != this.mUser) {
+                        return user;
+                    }
                 }
                 
                 

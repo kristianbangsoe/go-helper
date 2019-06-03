@@ -24,7 +24,8 @@ class User extends JsonResource
         $categories = DB::select('SELECT * FROM user_categories WHERE user_id =' . $this->id);
 
 
-        $user_categories = DB::select('SELECT user_categories.category_id AS id, categories.name, user_categories.experince, user_categories.description  
+        $user_categories = DB::select('SELECT user_categories.category_id AS id, 
+        categories.name, user_categories.experince, user_categories.description  
         FROM categories 
         INNER JOIN user_categories
         ON user_categories.category_id = categories.id

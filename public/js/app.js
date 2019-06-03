@@ -67458,8 +67458,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return user;
                 }
             } else {
-
-                if (this.radius >= km && sec == 1 && user.id != this.mUser) {
+                if (this.radius >= km && this.age <= user.birth && sec == 1 && user.id != this.mUser) {
                     return user;
                 }
             }

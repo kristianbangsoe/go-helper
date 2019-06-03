@@ -57,6 +57,7 @@ class UserController extends Controller
         $user->phone = $request->input('phone');
         $cats = $request->input('checked_array');
             DB::table('user_categories')->where('user_id', $user->id)->delete();
+            
             foreach ($cats as $key => $val) {
                     $exp = $request->input('exp-' . $val);
                     $desc = $request->input('desc-' . $val);
@@ -69,7 +70,8 @@ class UserController extends Controller
                     }
 
                     DB::insert(
-                        'insert into `user_categories` (`user_id`, `category_id`, `experince`, `description`, `created_at`, `updated_at`) values (' . $user->id . ','. $val .','. $exp .',"'. $desc .'","2018-11-15 23:18:31","2018-11-15 23:18:31")'
+                        'insert into `user_categories` (`user_id`, `category_id`, `experince`, `description`, `created_at`, `updated_at`)
+                        values (' . $user->id . ','. $val .','. $exp .',"'. $desc .'",'now()','now()')'
                     ); 
              
             }
